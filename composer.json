@@ -1,0 +1,20 @@
+{
+    "name": "ajepe/base62",
+    "description": "base62 encode integer as a string and decode the string back to an integer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ajepe Babatope De Immaculate",
+            "email": "ajepebabatope@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {},
+
+    "autoload":{
+        "psr-4": {
+            "Base\\": "src/base/"
+        }
+    }
+}
