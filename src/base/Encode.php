@@ -24,7 +24,7 @@ class Encode
 	 * @param inter $base default = 62.
 	 * @return encoded base 62 string.
 	 */
-	public function encode($id, $base = 62):string
+	public function encode($id, int $base = 62):string
 	{
 		if (!is_int($id) && $id < 1) {
 			$type = gettype($id);

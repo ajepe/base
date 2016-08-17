@@ -1,4 +1,5 @@
-<?php
+<?php declare(strict_types = 1);
+
 namespace Base;
 /*
  * This file is part of the base\base62 package.

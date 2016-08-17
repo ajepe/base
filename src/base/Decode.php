@@ -1,4 +1,5 @@
-<?php
+<?php declare(strict_types = 1);
+
 namespace Base;
 /*
  * This file is part of the base\base62 package.
@@ -24,7 +25,7 @@ class Decode
      * @return intval.
      */
       
-    public function decode($string):int
+    public function decode(string $string):int
     {
         $string = preg_replace('/[\s|\.|\,]+/', '', $string);
         $len = strlen($string) - 1;
