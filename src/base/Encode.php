@@ -24,12 +24,8 @@ class Encode
 	 * @param inter $base default = 62.
 	 * @return encoded base 62 string.
 	 */
-	public function encode($id, int $base = 62):string
+	public function encode(int $id, int $base = 62): string
 	{
-		if (!is_int($id) && $id < 1) {
-			$type = gettype($id);
-			throw new \InvalidArgumentException(sprintf("Expects intval %s given. ", $type));
-		}
 		$modulus = $id % $base;
 		$indexPos = $this->alphaNumericList[$modulus];
 		$divide = floor($id / $base);

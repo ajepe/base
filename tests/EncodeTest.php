@@ -15,16 +15,16 @@ class EncodeTest extends \PHPUnit_Framework_TestCase
 	}
 
 
-	public function testEncodeForIntegerOverFlowInWindows()
+	public function testEncodeForIntegerOverFlowOnBase32ArchitectureOs()
 	{
-		$expected_result = "Jzt9vW";
+		$expected_result = 'HXy0p9'; //TODO: fix os information in
 		$base = new Encode();
-		$result = $base->encode(9223775807);
+		$result = $base->encode(2147483647);
 		$this->assertEquals($expected_result, $result);
 	}
 
 	/**
-	 *@expectedException InvalidArgumentException
+	 *@expectedException TypeError
 	 */
 
 	public function testThrowsInvalidArgumentExceptionIfStringIsPassed()
