@@ -1,5 +1,5 @@
 ## BASE62
-Base is a small package that  encode integer as a string and decode the string back to an integer, this is can useful in making  URL shortening application or generating unique URL. This package convert the id in decimal to base 62 characters with the encode method and convert it back to decimal with the decode public method.
+Base is a small package that encodes integer to a string and decodes the same string back to an integer, this is can useful in making  URL shortening application or generating unique URL slug. It convert the __int__ id to base 62 characters with the encode method and converts it back to an integer with the decode public method.
 
 * It converts non-negative integer number like _42000000_  up to _PHP\_INT\_SIZE_ of the platform in which the package is being use on into a string like _2Qe7m_. The action is reversible.
 * It can also decode the id back from _2Qe7m_ to _42000000_.
