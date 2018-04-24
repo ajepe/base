@@ -4,7 +4,7 @@ namespace Base\Test;
 use Base\Encode;
 use Base\Decode;
 
-class DecodeTest extends \PHPUnit_Framework_TestCase
+class DecodeTest extends \PHPUnit\Framework\TestCase
 {
 	public function testDecode()
 	{
