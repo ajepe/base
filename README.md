@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ajepe/base62.svg?branch=master)](https://travis-ci.org/ajepe/base)
+[![Build Status](https://travis-ci.org/ajepe/base62.svg?branch=master)](https://travis-ci.org/ajepe/base62)
 ## BASE62 
 Base is a small package that encodes integer to a string and decodes the same string back to an integer, this is can useful in making  URL shortening application or generating unique URL slug. It convert the __int__ id to base 62 characters with the encode method and converts it back to an integer with the decode public method.
 
